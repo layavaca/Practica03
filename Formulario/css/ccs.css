@@ -116,4 +116,14 @@ label:after {
 	border-bottom-right-radius: 50%;
 }
 
+body{
+	margin: 30px 200px;
+	align-self: center;
+	background-image: url("../descarga.jpg")
+}
+img{
+	position: relative;
+	width: 250px;
+	height: 300px;
+}
 
