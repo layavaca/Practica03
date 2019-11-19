@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascripts" scr=../validaciones/validaciones.js></script>
+    <style type="text/css">
+        .error{
+            color:red;
+            font-size: 8px;
+        }
+    </style>
+    <title>Fomulario</title>
+  <link rel="stylesheet" href="../css/pagina_estilo.css" type="text/css">
+</head>
+<body>
+    <div class="esquema">
+        <form id="fomulario01" method="POST"action="" onsubmit="return validarCamposObligatorios()">
+        
+            <label for="cedula">Cedula (*)</label>
+            <input type="text"id="cedula"name="cedula"value=""placeholder="Ingrese el número de cedula ..."/>
+            <span id="mensajeCedula" class="error"></span>
+            <br>
+
+            <label for="nombres">Nombres (*)</label>
+            <input type="text"id="nombres"name="nombres" value=""placeholder="Ingrese sus dos nombres ..."
+            onkeypress="return validarLetras"/>
+            <br>
+
+            <label for="apellidos">Apelidos (*)</label>
+            <input type="text"id="apellidos"name="apellidos" value=""placeholder="Ingrese sus dos apellidos ..."/>
+            <br>
+
+            <label for="direccion">Dirección (*)</label>
+            <input type="text"id="direccion"name="direccion"value=""placeholder="Ingrese su dirección ..." />
+            <br>
+
+            <label for="telefono">Teléfono (*)</label>
+            <input type="text"id="telefono"name="telefono"value=""placeholder="Ingrese su número telefónico ..."/>
+            <br>
+
+            <label for="fecha">Fecha Nacimiento (*)</label>
+            <input type="date"id="fechaNacimiento"name="fechaNacimiento"value=""placeholder="Ingrese su fecha de nacimiento ..."/>
+            <br>
+
+            <label for="correo">Correo electrónico (*)</label>
+            <input type="email"id="correo"name="correo"value=""placeholder="Ingrese su correo electrónico..."/>
+            <br>
+
+            <input type="submit"id="crear"name="crear"value="Aceptar"/>
+            <input type="reset"id="cancelar"name="cancelar"value="Cancelar"/>
+        </form>
+    </div>
+</body>
+</html>
