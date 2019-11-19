@@ -7,7 +7,7 @@ function validarCamposObligatorios() {
     for (var i = 0; i < document.forms[0].elements.length - 2; i++) {
         var elemento = document.forms[0].elements[i]
         if (elemento.value == '' && (elemento.type == 'text' || elemento.type == 'password')) {
-            if (elemento.id == 'cedula') {
+            if (elemesnto.id == 'cedula') {
                 document.getElementById('mensajeCedula').innerHTML = '<br>La cedula esta vacía'
             } else if (elemento.id == 'nombres') {
                 document.getElementById('mensajeNombres').innerHTML = '<br>Los nombres estan vacíos'
